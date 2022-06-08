@@ -11,25 +11,26 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: #427AA1;
     margin: auto;
     width: 100%;
-    margin-top: 15px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    padding: 0px;
+
 }
 
 .nav-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 2.5px solid black;
 }
 
 .nav-container h1 {
     border: 3px solid black;
-    background-color: white;
-    font-size: 3em;
+    background-color: #EBF2FA;
+    font-size: 4em;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .nav {
@@ -51,17 +52,112 @@ a {
 }
 
 a:hover {
-    color: white;
-    background-color: grey;
+    color: #EBF2FA;
     text-decoration: solid;
 }
 
 .post-header {
     background-color: white;
-    height: 100vh;
-    width: 80%;
-    margin: auto;
+    width: 100%;
 }
+
+.post-header-div {
+    display: flex;
+    width: 100%;
+    background-color: #EBF2FA;
+    box-sizing: border-box;
+    padding: 2.25em;
+
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.div-tittles {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sub-tittle {
+    font-size: 1.5em;
+    margin: 0;
+    width: 75%;
+}
+
+.tittle {
+    width: 75%;
+    font-size: 4em;
+    margin: 0;
+}
+
+.landing-container p {
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.post-header-img {
+    max-height: 370px;
+    width: 40%;
+    border-radius: 5px;
+    margin-right: 60px;
+    box-shadow: 10px 8px 27px 3px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 10px 8px 27px 3px rgba(0,0,0,0.64);
+    -moz-box-shadow: 10px 8px 27px 3px rgba(0,0,0,0.64);
+}
+
+button {
+    width: 15%;
+    min-width: 100px;
+    border: 1.5px solid black;
+    color: #EBF2FA;
+    background-color: #427aa1;
+    margin-top: 40px;
+    border-radius: 10px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #05668d;
+    cursor: pointer;
+}
+
+.post-header-div-mid {
+    display: flex;
+    background-color: #427aa1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+
+}
+
+.post-header-div-mid p {
+    width: 70%;
+    color: #EBF2FA;
+    font-weight: 500;
+}
+
+.post-header-div-mid ul {
+    color: #EBF2FA;
+    font-weight: 500;
+}
+
+.post-header-div-mid h2 {
+    font-size: 1.9em;
+    color: #EBF2FA;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 
 @media (max-width: 990px) and (min-width: 800px  ){
     header {
