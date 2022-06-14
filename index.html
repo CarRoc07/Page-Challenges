@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="./js/all.min.js"></script>
     <title>Nav-Bar</title>
+    
 </head>
 <body>
     <header>
@@ -13,14 +15,14 @@
             <h1>CS</h1>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a>Inicio</a></li>
-                    <li><a>Servicios</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
                     <li><a>Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="post-header">
+    <main class="post-header" id="inicio">
         <div class="post-header-div">
             <div class="landing-container">
                 <div class="div-tittles">
@@ -31,9 +33,9 @@
                      Ducimus, magnam, nesciunt sint non omnis distinctio repellendus, nisi delectus ratione labore iste optio ullam expedita! Cumque eaque dolor placeat atque quae?</p>
                 <button>Mas info</button>
             </div>
-            <img class="post-header-img" src="/assets/img-programmer.png" alt="Persona programando">
+            <img class="post-header-img" src="./assets/img-programmer.png" alt="Persona programando">
         </div>
-        <div class="post-header-div-mid">
+        <div class="post-header-div-mid" id="servicios">
             <h2>¿Qué hace un FrontEnd-Developer?</h2>
             <p>Un Front-end Developer es aquella persona encargada de programar el navegador de una web, 
                 es decir, es el encargado de traducir las definiciones de diseño y estilo visual realizadas en etapas previas a códigos HTML semántico. 
@@ -49,6 +51,54 @@
                 <li>Crear herramientas que mejoren la interacción entre usuario y web.</li>
                 <li>Usar APIs para conectar la web con servicios y sistemas.</li>
             </ul>
+        </div>
+        <div class="post-header-div-serv">
+            <div class="headTittles">
+                <h2>Descubre que ofrecemos...</h2>
+                <h3>Nuestros servicios y sus beneficios</h3>
+            </div>
+            <div class="post-header-div-serv-cont2">
+                <div>
+                    <img src="./svgs/solid/bullhorn.svg" alt="Megafono" class="img-icons">
+                    <p>Tenemos en cuenta tu opinion, es todo lo que vale. Desarrollamos en base a tus necesidades.</p>
+                </div>
+                <div>
+                    <img src="./svgs/solid/computer.svg" alt="Computadora" class="img-icons">
+                    <p>Contamos con los mejores equipos para que puedas estar al dia con todos nuestros avances.</p>
+                </div>
+                <div>
+                    <img src="./svgs/regular/clock.svg" alt="Reloj" class="img-icons">
+                    <p>Plazos definidos. Entregamos tu web en menos de 45 dias! Si no cumplimos te devolvemos el 50% del pago.</p>
+                </div>
+            </div>
+        </div>
+        <div class="post-header-div-work">
+            <div class="headTittles">
+                <h2>¿Cómo funciona el Proyecto?</h2>
+                <h3>Nuestra manera de trabajar por pasos</h3>
+            </div>
+            <div class="post-header-div-work-pasos">
+                <div>
+                    <img src="./svgs/solid/1.svg" alt="Numero 1" class="img-icons-2">
+                    <h4>Inicio</h4>
+                    <p>Nos reunimos e ideamos como debe ser la pagina, que creemos que debe tener.</p>
+                </div>
+                <div>
+                    <img src="./svgs/solid/2.svg" alt="Numero 2" class="img-icons-2">
+                    <h4>Desarrollo</h4>
+                    <p>Comenzamos a desarrollar la pagina, actualizandote semana a semana lo progresos.</p>
+                </div>
+                <div>
+                    <img src="./svgs/solid/3.svg" alt="Numero 3" class="img-icons-2">
+                    <h4>Prototipo</h4>
+                    <p>A los 30 dias te presentamos el primer prototipo, y nos das una devolución.</p>
+                </div>
+                <div>
+                    <img src="./svgs/solid/4.svg" alt="Numero 4" class="img-icons-2">
+                    <h4>Final</h4>
+                    <p>A los 45 dias te presentamos en resultado final del proyecto, ya funcionando en linea.</p>
+                </div>
+            </div>
         </div>
     </main>
 </body>
