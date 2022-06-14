@@ -234,7 +234,7 @@ button:hover {
     padding: 20px;
 }
 
-.post-header-div-work-pasos p {
+.post-header-div-work-pasos div p {
     width: 90%;
     margin: 0px;
 
@@ -271,9 +271,15 @@ button:hover {
     height: 90px;
 }
 
+@media (max-width: 1150px) and (min-width: 850px  ) {
 
+    .post-header-div-work-pasos {
+        width: 100%;
+    }
 
-@media (max-width: 990px) and (min-width: 840px  ){
+}
+
+@media (max-width: 990px) and (min-width: 850px  ){
     .post-header-img {
         width: 50%;
     }
@@ -283,7 +289,7 @@ button:hover {
     }
 }
 
-@media (max-width: 839px) {
+@media (max-width: 849px) {
     .post-header-div {
         flex-wrap: wrap;
         flex-direction: row;
@@ -316,6 +322,22 @@ button:hover {
     .sub-tittle {
         width: 100%;
     }
+
+    .post-header-div-work-pasos {
+        flex-direction: column;
+    }
+
+    .post-header-div-work-pasos div p {
+        width: 75%;
+    }
+
+    .post-header-div-work-pasos div {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 
 }
 
@@ -352,6 +374,7 @@ button:hover {
 }
 
 @media (max-width: 799px) {
+
     .post-header-div-serv-cont2 {
         flex-direction: column;
     }
@@ -362,6 +385,14 @@ button:hover {
 
     .post-header-div-serv-cont2 p {
         width: 75%;
+    }
+
+    .headTittles h2 {
+        font-size: 1.9em;
+    }
+
+    .post-header-div-mid h2 {
+        font-size: 1.7em;
     }
 }
 
