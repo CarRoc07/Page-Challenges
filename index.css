@@ -1,13 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Oxanium', cursive;
     font-weight: 700;
-    background-color: grey;
+    background-color: #EBF2FA;
     margin: 0;
     width: 100%;
     padding: 0;
+}
+
+.color-white {
+    color: #EBF2FA;
 }
 
 /* Nav-bar Header */
@@ -28,7 +36,7 @@ header {
 }
 
 .nav-container h1 {
-    border: 3px solid black;
+    border: 5px solid black;
     background-color: #EBF2FA;
     font-size: 4em;
     margin-bottom: 10px;
@@ -55,7 +63,7 @@ a {
 
 a:hover {
     color: #EBF2FA;
-    text-decoration: solid;
+    text-decoration-color: #EBF2FA;
 }
 
 /* Post-Header landing Page */
@@ -80,6 +88,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 50%;
+    text-align: center;
    
 }
 
@@ -87,11 +96,12 @@ a:hover {
     width: 75%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    text-align: center;
 }
 
 .sub-tittle {
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin: 0;
     width: 75%;
 }
@@ -106,7 +116,8 @@ a:hover {
     width: 75%;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 300;
+    font-size: 1.25em;
 }
 
 .post-header-img {
@@ -185,7 +196,8 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .headTittles h2 {
@@ -209,6 +221,7 @@ button:hover {
     flex-direction: column;
     width: 30%;
     padding: 10px;
+    text-align: center;
 
 }
 
@@ -231,7 +244,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     background-color: #EBF2FA;
-    padding: 20px;
+    padding: 40px;
 }
 
 .post-header-div-work-pasos div p {
@@ -255,6 +268,7 @@ button:hover {
     flex-direction: column;
     box-sizing: border-box;
     padding: 10px;
+    text-align: center;
 }
 
 .post-header-div-work-pasos div h4 {
@@ -269,12 +283,207 @@ button:hover {
     width: 20%;
     min-width: 60px;
     height: 90px;
+    padding: 20px;
+    background-color: #427AA1;
+    border: 3px solid black;
+    border-radius: 20%;
+}
+
+/* Seccion clientes*/
+
+.post-header-div-clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px;
+    background-color: #427AA1;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.post-header-div-clients-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #427AA1;
+    padding: 10px;
+    width: 80%;
+}
+
+.post-header-div-clients-cards div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #EBF2FA;
+    width: 20%;
+    margin: 20px;
+    margin-right: 25px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    overflow: hidden;
+    transition: all 1.5s ease;
+    text-align: center;
+
+}
+
+.post-header-div-clients-cards div:hover {
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.5);
+    transform: translateY(-3%);
+
+}
+
+.post-header-div-clients-cards div img {
+    object-fit: cover;
+    cursor: pointer;
+    width: 100%;
+    height: 230px;
+}
+
+.post-header-div-clients h4 {
+    font-size: 2em;
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: 900;
+}
+
+/* Footer - Contact */
+
+footer {
+    background-color: #EBF2FA;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+}
+
+.contact-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.contact-logos {
+    margin-top: 50px;
+}
+
+iframe {
+    width: 45%;
+    min-height: 350px;
+    border-radius: 20px;
+}
+
+.contact-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.contact-img2 {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    background-color: #427AA1;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.container-imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.contact-container-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-div h2 {
+    font-size: 2.5em;
+    background-color: #427AA1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.contact-div h3 {
+    font-size: 1.6em;
+}
+
+.contact-div p {
+    font-weight: 300;
+    font-size: 1em;
+    width: 80%;
+}
+
+.contact-img2:hover {
+    background-color: #206ba0;
+}
+
+/* Foot of page */
+
+.end-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #427AA1;
+    border-top: 2px solid black;
+}
+
+.end-page h2 {
+    border: 5px solid black;
+    background-color: #427AA1;
+    font-size: 4em;
+    margin-bottom: 8px;
+    margin-top: 15px;
+
+}
+
+
+@media (max-width: 1200px) and (min-width: 1050px) {
+    .post-header-div-clients-cards {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 1150px) and (min-width: 850px  ) {
 
     .post-header-div-work-pasos {
         width: 100%;
+    }
+
+}
+
+@media (max-width: 1049px) {
+
+    .post-header-div-clients-cards {
+        flex-direction: column;
+    }
+
+    .post-header-div-clients-cards div {
+        width: 40%;
     }
 
 }
@@ -286,6 +495,10 @@ button:hover {
 
     .landing-container p {
         width: 90%;
+    }
+
+    .post-header-div-clients-cards div {
+        width: 50%;
     }
 }
 
@@ -336,8 +549,6 @@ button:hover {
         align-items: center;
         justify-content: center;
     }
-
-
 
 }
 
@@ -394,6 +605,52 @@ button:hover {
     .post-header-div-mid h2 {
         font-size: 1.7em;
     }
+
+    .post-header-div-clients-cards div {
+        width: 60%;
+    }
+
+    .contact {
+        flex-direction: column-reverse;
+    }
+
+    iframe {
+        width: 80%;
+        margin-top: 25px;
+    }
+
+    .contact-div {
+        width: 80%;
+        align-items: center;
+    }
+
+    .contact-container-left {
+        align-items: center;
+    }
+
+    .container-imgs {
+        width: 100%;
+    }
+
+    .contact-div h3 {
+        text-align: center;
+    }
+
+    .end-page h2 {
+        font-size: 3em;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .post-header-div-clients-cards div {
+        width: 70%;
+    }
+
+    .end-page h2 {
+        font-size: 2.4em;
+    }
 }
 
 
@@ -427,5 +684,13 @@ button:hover {
     .nav-list {
         margin-top: 0px;
         font-size: 1.25em;
+    }
+
+    .post-header-div-clients-cards div {
+        width: 85%;
+    }
+
+    .contact-img2 {
+        margin-right: 5px;
     }
 }
